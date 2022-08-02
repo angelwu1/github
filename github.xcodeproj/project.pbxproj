@@ -17,6 +17,14 @@
 		BD4665A0289816D400C8A9F3 /* githubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46659F289816D400C8A9F3 /* githubTests.swift */; };
 		BD4665AA289816D400C8A9F3 /* githubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4665A9289816D400C8A9F3 /* githubUITests.swift */; };
 		BD4665AC289816D400C8A9F3 /* githubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4665AB289816D400C8A9F3 /* githubUITestsLaunchTests.swift */; };
+		BD4665B92899B60500C8A9F3 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4665B82899B60500C8A9F3 /* HomePageViewController.swift */; };
+		BD4665BB2899B9EB00C8A9F3 /* NamePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4665BA2899B9EB00C8A9F3 /* NamePageViewController.swift */; };
+		BD4665BD2899BBD900C8A9F3 /* globalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4665BC2899BBD900C8A9F3 /* globalVariables.swift */; };
+		BD4665BF2899BC5400C8A9F3 /* howAreYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4665BE2899BC5400C8A9F3 /* howAreYouViewController.swift */; };
+		BD4665C12899BEE800C8A9F3 /* DrankWaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4665C02899BEE800C8A9F3 /* DrankWaterViewController.swift */; };
+		BD4665C32899BFD000C8A9F3 /* DidYouEatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4665C22899BFD000C8A9F3 /* DidYouEatViewController.swift */; };
+		BD4665C52899C04000C8A9F3 /* FeelingStressedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4665C42899C04000C8A9F3 /* FeelingStressedViewController.swift */; };
+		BD4665C72899C09A00C8A9F3 /* GoOutsideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4665C62899C09A00C8A9F3 /* GoOutsideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		BD4665A5289816D400C8A9F3 /* githubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = githubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4665A9289816D400C8A9F3 /* githubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = githubUITests.swift; sourceTree = "<group>"; };
 		BD4665AB289816D400C8A9F3 /* githubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = githubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD4665B82899B60500C8A9F3 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		BD4665BA2899B9EB00C8A9F3 /* NamePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePageViewController.swift; sourceTree = "<group>"; };
+		BD4665BC2899BBD900C8A9F3 /* globalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalVariables.swift; sourceTree = "<group>"; };
+		BD4665BE2899BC5400C8A9F3 /* howAreYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howAreYouViewController.swift; sourceTree = "<group>"; };
+		BD4665C02899BEE800C8A9F3 /* DrankWaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrankWaterViewController.swift; sourceTree = "<group>"; };
+		BD4665C22899BFD000C8A9F3 /* DidYouEatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidYouEatViewController.swift; sourceTree = "<group>"; };
+		BD4665C42899C04000C8A9F3 /* FeelingStressedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeelingStressedViewController.swift; sourceTree = "<group>"; };
+		BD4665C62899C09A00C8A9F3 /* GoOutsideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoOutsideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +120,14 @@
 				BD466585289816D100C8A9F3 /* AppDelegate.swift */,
 				BD466587289816D100C8A9F3 /* SceneDelegate.swift */,
 				BD466589289816D100C8A9F3 /* ViewController.swift */,
+				BD4665B82899B60500C8A9F3 /* HomePageViewController.swift */,
+				BD4665BA2899B9EB00C8A9F3 /* NamePageViewController.swift */,
+				BD4665BE2899BC5400C8A9F3 /* howAreYouViewController.swift */,
+				BD4665C02899BEE800C8A9F3 /* DrankWaterViewController.swift */,
+				BD4665C22899BFD000C8A9F3 /* DidYouEatViewController.swift */,
+				BD4665C42899C04000C8A9F3 /* FeelingStressedViewController.swift */,
+				BD4665C62899C09A00C8A9F3 /* GoOutsideViewController.swift */,
+				BD4665BC2899BBD900C8A9F3 /* globalVariables.swift */,
 				BD46658B289816D100C8A9F3 /* Main.storyboard */,
 				BD466591289816D400C8A9F3 /* Assets.xcassets */,
 				BD466593289816D400C8A9F3 /* LaunchScreen.storyboard */,
@@ -261,9 +285,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4665C12899BEE800C8A9F3 /* DrankWaterViewController.swift in Sources */,
 				BD46658A289816D100C8A9F3 /* ViewController.swift in Sources */,
 				BD466586289816D100C8A9F3 /* AppDelegate.swift in Sources */,
+				BD4665BF2899BC5400C8A9F3 /* howAreYouViewController.swift in Sources */,
 				BD466590289816D100C8A9F3 /* github.xcdatamodeld in Sources */,
+				BD4665C32899BFD000C8A9F3 /* DidYouEatViewController.swift in Sources */,
+				BD4665B92899B60500C8A9F3 /* HomePageViewController.swift in Sources */,
+				BD4665BB2899B9EB00C8A9F3 /* NamePageViewController.swift in Sources */,
+				BD4665C52899C04000C8A9F3 /* FeelingStressedViewController.swift in Sources */,
+				BD4665BD2899BBD900C8A9F3 /* globalVariables.swift in Sources */,
+				BD4665C72899C09A00C8A9F3 /* GoOutsideViewController.swift in Sources */,
 				BD466588289816D100C8A9F3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
