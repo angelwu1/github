@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "animal_character_hamster-2.png",
+      "filename" : "cat_smile.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "animalface_neko.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "animal_character_hamster-2.png",
+      "filename" : "animal_character_hamster.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "animal_panda_cheerleader-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "animal_panda_cheerleader.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
