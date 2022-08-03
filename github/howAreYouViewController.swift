@@ -16,6 +16,7 @@ class howAreYouViewController: UIViewController {
     }
     
     @IBAction func goodDayButton(_ sender: UIButton) {
+        print(moodCounter)
         moodCounter = moodCounter + 1
     }
     

@@ -17,7 +17,9 @@ class GoOutsideViewController: UIViewController {
     
 
     @IBAction func yesOutside(_ sender: UIButton) {
+        print(moodCounter)
         moodCounter = moodCounter + 1
+        performSegue(withIdentifier: "toHomePage", sender: sender)
     }
     
     @IBAction func noOutside(_ sender: UIButton) {

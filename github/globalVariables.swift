@@ -8,3 +8,7 @@
 // Global Variables
 
 public var moodCounter = 0 
+
+public var selectedAnimal = ""
+
+public var petName = ""

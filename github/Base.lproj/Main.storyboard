@@ -37,6 +37,9 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="cat"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="catImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0fL-Pi-Zsz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dp-Qq-71m">
                                 <rect key="frame" x="58" y="273" width="128" height="128"/>
@@ -45,14 +48,9 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="hammy"/>
                                 </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlo-iS-9av">
-                                <rect key="frame" x="58" y="477" width="131" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="cute-panda-waving-hand-cartoon_346903-1163"/>
-                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="hamsterImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="95S-IR-cIB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHr-O6-gCW">
                                 <rect key="frame" x="227" y="477" width="128" height="128"/>
@@ -61,6 +59,9 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="dog"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="dogImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8YW-ed-mTd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDc-M8-fxW">
                                 <rect key="frame" x="156" y="702" width="103" height="50"/>
@@ -87,10 +88,48 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXC-Iz-uHG">
+                                <rect key="frame" x="174" y="638" width="66" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hamster" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4M-E2-De1">
+                                <rect key="frame" x="152" y="638" width="107" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Panda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn6-nb-PiZ">
+                                <rect key="frame" x="172" y="644" width="70" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k3-Oy-evu">
+                                <rect key="frame" x="58" y="477" width="128" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="animal_bear_panda"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pandaImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H20-bN-CGf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="catLabel" destination="lXC-Iz-uHG" id="lRe-Ej-KhG"/>
+                        <outlet property="dogLabel" destination="T5W-6U-iPv" id="9Rr-vf-Ef1"/>
+                        <outlet property="hamsterLabel" destination="B4M-E2-De1" id="IUN-Hp-008"/>
+                        <outlet property="pandaLabel" destination="fn6-nb-PiZ" id="yt5-Ut-zKF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,11 +149,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r9o-yd-Nr4">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="    " borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r9o-yd-Nr4">
                                 <rect key="frame" x="70" y="586" width="274" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="petNameTextField:" destination="6eH-hh-nba" eventType="editingDidEnd" id="uSJ-dX-usC"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrd-24-nGx">
                                 <rect key="frame" x="43" y="442" width="329" height="87"/>
@@ -164,6 +206,9 @@
                         <viewLayoutGuide key="safeArea" id="NZ6-A7-0w2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="petNameOutlet" destination="r9o-yd-Nr4" id="DqG-M8-Vxp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2k0-bz-9xy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,13 +293,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rudolph" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAW-zO-dkL">
-                                <rect key="frame" x="126" y="148" width="162" height="60"/>
+                                <rect key="frame" x="52" y="148" width="306" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog standing" translatesAutoresizingMaskIntoConstraints="NO" id="8jj-ry-wde">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="neutral hamster" translatesAutoresizingMaskIntoConstraints="NO" id="8jj-ry-wde">
                                 <rect key="frame" x="50" y="297" width="315" height="242"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -290,20 +335,24 @@
                                 <rect key="frame" x="27" y="565" width="361" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MoodCounter goes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPG-JU-uCE">
-                                <rect key="frame" x="146" y="103" width="242" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="happy hamster" translatesAutoresizingMaskIntoConstraints="NO" id="KQV-Ce-hS4">
+                                <rect key="frame" x="50" y="297" width="308" height="242"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry hamster" translatesAutoresizingMaskIntoConstraints="NO" id="Q4A-cz-Hk6">
+                                <rect key="frame" x="50" y="297" width="308" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iW7-WX-FGQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="angryHamster" destination="Q4A-cz-Hk6" id="kXB-FE-asw"/>
                         <outlet property="dogFood" destination="09o-YJ-5ki" id="HVP-gc-xiw"/>
-                        <outlet property="moodCounterLabel" destination="YPG-JU-uCE" id="Xgm-Pl-am2"/>
+                        <outlet property="happyHamster" destination="KQV-Ce-hS4" id="wal-tx-foc"/>
+                        <outlet property="neutralHamster" destination="8jj-ry-wde" id="bxP-bA-zV6"/>
+                        <outlet property="petNameLabel" destination="pAW-zO-dkL" id="tyB-Jr-RX5"/>
                         <outlet property="waterImage" destination="5xb-bb-7iJ" id="SUk-6C-BVr"/>
                     </connections>
                 </viewController>
@@ -514,7 +563,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="yesOutside:" destination="GZc-Um-t8z" eventType="touchUpInside" id="Vwz-jH-5q4"/>
-                                    <segue destination="vuA-PL-BHj" kind="presentation" modalPresentationStyle="fullScreen" id="qAa-CQ-uZL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5V-Yp-ldw">
@@ -546,6 +594,9 @@
                         <viewLayoutGuide key="safeArea" id="G20-gK-IjJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="vuA-PL-BHj" kind="presentation" identifier="toHomePage" modalPresentationStyle="fullScreen" id="ySY-UM-ayg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97W-cx-UFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -557,16 +608,18 @@
         <segue reference="ydA-2z-NUK"/>
         <segue reference="zN0-sD-dV7"/>
         <segue reference="HGQ-bf-K1T"/>
-        <segue reference="x1H-Pf-q56"/>
+        <segue reference="ySY-UM-ayg"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="angry hamster" width="658" height="675"/>
+        <image name="animal_bear_panda" width="180" height="180"/>
         <image name="cat" width="195" height="258"/>
-        <image name="cute-panda-waving-hand-cartoon_346903-1163" width="626" height="626"/>
         <image name="dog" width="214" height="235"/>
         <image name="dog bowl for water" width="612" height="328"/>
         <image name="dog food" width="225" height="225"/>
-        <image name="dog standing" width="730" height="800"/>
         <image name="hammy" width="180" height="180"/>
+        <image name="happy hamster" width="741" height="741"/>
+        <image name="neutral hamster" width="214" height="235"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

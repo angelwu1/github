@@ -11,11 +11,18 @@ class HomePageViewController: UIViewController {
 
     //outlets
     
+    @IBOutlet weak var petNameLabel: UILabel!
+    
     @IBOutlet weak var waterImage: UIImageView!
     
     @IBOutlet weak var dogFood: UIImageView!
     
-    @IBOutlet weak var moodCounterLabel: UILabel!
+    
+    @IBOutlet weak var angryHamster: UIImageView!
+    
+    @IBOutlet weak var happyHamster: UIImageView!
+    
+    @IBOutlet weak var neutralHamster: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +31,59 @@ class HomePageViewController: UIViewController {
         waterImage.isHidden = true
         dogFood.isHidden = true
         
-        moodCounterLabel.text = "\(moodCounter)"
         
+        petNameLabel.text = petName
         
+        // HIDE ALL IMAGES
+        angryHamster.isHidden = true
+        happyHamster.isHidden = true
+        neutralHamster.isHidden = true
+        
+        // Based on which animal is selected...
+        // HAMSTER
+        if (selectedAnimal == "hamster") {
+            if (moodCounter >= 4) {
+                happyHamster.isHidden = false
+            } else if (moodCounter >= 2) {
+                neutralHamster.isHidden = false
+            } else {
+                angryHamster.isHidden = false
+            }
+            
+            // DOG
+        } else if (selectedAnimal == "dog") {
+            if (moodCounter >= 4) {
+                happyHamster.isHidden = false
+            } else if (moodCounter >= 2) {
+                neutralHamster.isHidden = false
+            } else {
+                angryHamster.isHidden = false
+            }
+            
+            // CAT
+        } else if (selectedAnimal == "cat") {
+            if (moodCounter >= 4) {
+                happyHamster.isHidden = false
+            } else if (moodCounter >= 2) {
+                neutralHamster.isHidden = false
+            } else {
+                angryHamster.isHidden = false
+            }
+            
+            // PANDA
+        } else if (selectedAnimal == "panda") {
+            if (moodCounter >= 4) {
+                happyHamster.isHidden = false
+            } else if (moodCounter >= 2) {
+                neutralHamster.isHidden = false
+            } else {
+                angryHamster.isHidden = false
+            }
+        }
+        
+
+        
+
         
         
     }

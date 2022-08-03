@@ -17,6 +17,7 @@ class DrankWaterViewController: UIViewController {
     
     
     @IBAction func yesWater(_ sender: UIButton) {
+        print(moodCounter)
         moodCounter = moodCounter + 1
     }
     

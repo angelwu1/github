@@ -16,6 +16,7 @@ class DidYouEatViewController: UIViewController {
     }
     
     @IBAction func yesEat(_ sender: UIButton) {
+        print(moodCounter)
         moodCounter = moodCounter + 1
     }
     

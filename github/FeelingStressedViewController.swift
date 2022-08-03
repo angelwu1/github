@@ -17,10 +17,11 @@ class FeelingStressedViewController: UIViewController {
     
     
     @IBAction func yesStressed(_ sender: UIButton) {
-        moodCounter = moodCounter + 1
     }
     
     @IBAction func noStressed(_ sender: UIButton) {
+        print(moodCounter)
+        moodCounter = moodCounter + 1
     }
     /*
     // MARK: - Navigation
